@@ -1,0 +1,201 @@
+~~~~~~~~~~~~~~~~~~~~~~~~
+ALL:
+~~~~~~~~~~~~~~~~~~~~~~~~
+	ClientIdentifier
+	Behaviour_Date_Key
+	BehaviourType
+	TAB1
+	TAB5
+	TAB7
+	TAB8
+	TAB9
+	TAB10
+	Total_Num_Inflow_L3M
+	Total_Amt_Inflow_L3M
+	Total_Num_Outflow_L3M
+	Total_Amt_Outflow_L3M
+	Num_Inflow_G1_L3M
+	Num_MoneySend_In_G1_L3M
+	Num_Elec_In_G1_L3M
+	Num_Pmt_In_G1_L3M
+	Num_CW_ATM_Out_G1_L3M
+	Num_EDO_Out_G1_L3M
+	Num_POS_Out_G1_L3M
+	Num_Loan_Out_G1_L3M
+	Num_SO_Out_G1_L3M
+	Num_Prepaid_Out_G1_L3M
+	Num_RTC_Out_G1_L3M
+	Num_CNP_Out_G1_L3M
+	Num_Pmt_Out_G1_L3M
+	Amt_Outflow_G1_L3M
+	Amt_CW_ATM_Out_G1_L3M
+	Amt_EDO_Out_G1_L3M
+	Amt_POS_Out_G1_L3M
+	Amt_Loan_Out_G1_L3M
+	Amt_SO_Out_G1_L3M
+	Amt_Prepaid_Out_G1_L3M
+	Amt_RTC_Out_G1_L3M
+	Amt_CNP_Out_G1_L3M
+	Amt_Pmt_Out_G1_L3M
+	Num_Outflow_CC_L3M
+	Amt_Outflow_CC_L3M
+	Num_POS_Out_CC_L3M
+	Amt_POS_Out_CC_L3M
+	MinBalanceL3M
+	MinBalanceAVG
+	MaxBalanceL3M
+	MaxBalanceAVG
+	ALL_Val_Cur_Mth_Instalm_30_Days
+	ALL_Perc_Utilisation
+	ALL_Num_Ever_Trades
+	ALL_Num_Open_Satisf_Trades
+	ALL_Num_Trades_180_Days
+	ALL_Val_OD_Bal_1_Year
+	C_Telephones
+	ALL_Perc_Satisf_To_Open_Trades
+	ALL_Avg_Months_On_Book
+	ALL_Perc_Payments_2Years
+	ALL_Time_MR_Trade
+	ALL_Num_Open_Trades
+	Has_Deed
+	Debt_Review_Score
+	ALL_Max_Delq_Ever
+	Score_MI
+	Thin_File_Flag
+	Enquiry_Only_Flag
+	Num_Accounts_All
+	Instalment_Amt_All
+	Current_Balance_All
+	Num_Accounts_CC
+	Num_Accounts_Veh
+	Num_USSD
+	Amt_USSD
+	Num_App
+	Amt_App
+	Num_Elec
+	Amt_Elec
+	Num_Airtime
+	Amt_Airtime
+	CW1
+	CS1
+	CS2
+	CS3
+	CS4
+	InsufFunds
+
+~~~~~~~~~~~~~~~~~~~~~
+OTHER:
+~~~~~~~~~~~~~~~~~~~~~
+	ClientIdentifier
+	BehaviourType
+	MinBalanceL3M
+	MinBalanceAVG
+	MaxBalanceL3M
+	MaxBalanceAVG
+	Enquiry_Only_Flag
+	Num_Accounts_All
+	Instalment_Amt_All
+	Current_Balance_All
+	Num_Accounts_CC
+	Num_Accounts_Veh
+
+~~~~~~~~~~~~~~~~~~~~~
+INCOMING:
+~~~~~~~~~~~~~~~~~~~~~
+	Total_Num_Inflow_L3M
+	Total_Amt_Inflow_L3M
+	Num_Inflow_G1_L3M
+	Num_MoneySend_In_G1_L3M
+	Num_Elec_In_G1_L3M
+	Num_Pmt_In_G1_L3M
+	Num_CW_ATM_Out_G1_L3M
+
+~~~~~~~~~~~~~~~~~~~~~
+OUTGOING:
+~~~~~~~~~~~~~~~~~~~~~
+	Total_Num_Outflow_L3M
+	Total_Amt_Outflow_L3M
+	Num_EDO_Out_G1_L3M
+	Num_POS_Out_G1_L3M
+	Num_Loan_Out_G1_L3M
+	Num_SO_Out_G1_L3M
+	Num_Prepaid_Out_G1_L3M
+	Num_RTC_Out_G1_L3M
+	Num_CNP_Out_G1_L3M
+	Num_Pmt_Out_G1_L3M
+	Amt_Outflow_G1_L3M
+	Amt_CW_ATM_Out_G1_L3M
+	Amt_EDO_Out_G1_L3M
+	Amt_POS_Out_G1_L3M
+	Amt_Loan_Out_G1_L3M
+	Amt_SO_Out_G1_L3M
+	Amt_Prepaid_Out_G1_L3M
+	Amt_RTC_Out_G1_L3M
+	Amt_CNP_Out_G1_L3M
+	Amt_Pmt_Out_G1_L3M
+	Num_Outflow_CC_L3M
+	Amt_Outflow_CC_L3M
+	Num_POS_Out_CC_L3M
+	Amt_POS_Out_CC_L3M
+	Num_USSD
+	Amt_USSD
+	Num_App
+	Amt_App
+	Num_Elec
+	Amt_Elec
+	Num_Airtime
+	Amt_Airtime
+
+~~~~~~~~~~~~~~~~~~~~~
+PROFILES:
+~~~~~~~~~~~~~~~~~~~~~
+	ALL_Val_Cur_Mth_Instalm_30_Days
+	ALL_Perc_Utilisation
+	ALL_Num_Ever_Trades
+	ALL_Num_Open_Satisf_Trades
+	ALL_Num_Trades_180_Days
+	ALL_Val_OD_Bal_1_Year
+	ALL_Perc_Satisf_To_Open_Trades
+	ALL_Avg_Months_On_Book
+	ALL_Perc_Payments_2Years
+	ALL_Time_MR_Trade
+	ALL_Num_Open_Trades
+
+~~~~~~~~~~~~~~~~~~~~~
+FINANCIAL HEALTH:
+~~~~~~~~~~~~~~~~~~~~~
+	Has_Deed
+	Debt_Review_Score
+	ALL_Max_Delq_Ever
+	Score_MI
+	InsufFunds
+
+~~~~~~~~~~~~~~~~~~~~~
+MASKED:
+~~~~~~~~~~~~~~~~~~~~~
+	TAB1
+	TAB5
+	TAB7
+	TAB8
+	TAB9
+	TAB10
+	CW1
+	CS1
+	CS2
+	CS3
+	CS4
+
+~~~~~~~~~~~~~~~~~~~~~
+DIMLY RELATED:
+~~~~~~~~~~~~~~~~~~~~~
+	C_Telephones
+
+~~~~~~~~~~~~~~~~~~~~~
+OMITTABLE BECAUSE OF:
+~~~~~~~~~~~~~~~~~~~~~
+	Thin_File_Flag
+
+~~~~~~~~~~~~~~~~~~~~~
+REMOVABLE:
+~~~~~~~~~~~~~~~~~~~~~
+	Behaviour_Date_Key
