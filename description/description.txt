@@ -1,0 +1,64 @@
+============================================================================
+								CHALLENGE
+============================================================================
+
+Overview:
+~~~~~~~~~~~~~~~~~~
+	Customize interactions with clients, resulting in personalized 
+	experience. What is the next thing that should be communicated to the 
+	client?
+
+Challenge:
+~~~~~~~~~~~~~~~~~~
+	Identify which of the 9 interactions is most relevant to the client. 
+	/
+
+The Data:
+~~~~~~~~~~~~~~~~~~
+	We are given data of people who have and have not started using an app, 
+	and how their behaviour has/has not changed. We need to predict the 
+	behaviour of new people who have/have not started using the app. 
+	Behaviour Type Descriptions
+	```````````````````````````
+		-) APP: 		take-up = used \/ notake-up = not used
+		-) BANKING: 	moved to Capitec
+		-) CARDUSER:	started using Capitec cards
+		-) CREDITCARD:	took up Capitec credit card
+		-) DEBITORDER:	moved debit orders to Capitec account
+		-) FINANCIALEDU:	 clients requiring financial education
+		-) LOAN:		took up Capitec loan (requirements...)
+		-) SAVING:		took up fixed savings accounts
+		-) VIRTUALCARD:	bank safety tried to sell them virtual card
+	Training data is balanced. Testing data is from real-word data - not
+	balanced.
+
+Measuring Success:
+~~~~~~~~~~~~~~~~~~
+	All errors will be viewed equally. 
+	/
+
+============================================================================
+								  JUDGE
+============================================================================
+The folling 5 criteria are weighted equally:
+CONCEPT
+	- Did we have a good solution?
+	- Did we understand and research the problem?
+	- Did we understand the end user's needs?
+CREATIVITY
+	- How creative were we?
+	- Did we come up with a radical approach, or follow existing solutions?
+	- Is this a differentiated idea in some way?
+SUPPLEMENTARY DATA
+	- Did we combine provided data with other data?
+	- Did we create value there?
+DATA SCIENCE/MACHINE LEARNING APPLICATION
+	- Did we come up with a model that provides insights to the business?
+	- This model needs to be data driven, but is not limited to pure
+	  machine learning applications (Model can also describe a system or a 
+	  process).
+BUSINESS MODEL/IMPACT
+	- Is the idea feasible, does it have economic and societal value, and 
+	  is it sustainable?
+	- If a small business used their data in this way, would it unlock new 
+	  value and improve the business?
