@@ -87,7 +87,15 @@ ALL:
 OTHER:
 ~~~~~~~~~~~~~~~~~~~~~
 	ClientIdentifier (some repeat for different BehavourType)
-	BehaviourType (18) {AppNoTake-up, AppTake-up, BankingNoTake-up, BankingNoTake-up, CardUserNoTake-up, CardUserTake-up, CreditCardNoTake-up, CreditCardTake-up, DebitOrderNoTake-up, DebitOrderTake-up, FinancialEducationNoTake-up, FinancialEducationTake-up, LoanNoTake-up, LoanTake-up, SavingsNoTake-up, SavingsTake-up, VirtualCardNoTake-up, VirtualCardTake-up}
+	BehaviourType (18) {Take-up vs NoTake-up of: App, 
+												 Banking, 
+												 CardUser, 
+												 CreditCard, 
+												 DebitOrder, 
+												 FinancialEducation, 
+												 Loan, 
+												 Savings, 
+												 VirtualCard}
 	MinBalanceL3M
 	MinBalanceAVG
 	MaxBalanceL3M
@@ -102,49 +110,49 @@ OTHER:
 ~~~~~~~~~~~~~~~~~~~~~
 INCOMING:
 ~~~~~~~~~~~~~~~~~~~~~
-	Total_Num_Inflow_L3M
-	Total_Amt_Inflow_L3M
-	Num_Inflow_G1_L3M
-	Num_MoneySend_In_G1_L3M
-	Num_Elec_In_G1_L3M
-	Num_Pmt_In_G1_L3M
-	Num_CW_ATM_Out_G1_L3M
+	Total_Num_Inflow_L3M    (all accounts - total count of inflows)
+	Total_Amt_Inflow_L3M	(all accounts - total value of inflows)
+	Num_Inflow_G1_L3M		(global account - count of inflows)
+	Num_MoneySend_In_G1_L3M	(all accounts - total cash transfer inflows)
+	Num_Elec_In_G1_L3M		(all accounts - total electronic inflows)
+	Num_Pmt_In_G1_L3M		(primary saving - count of payment inflows)
 
 ~~~~~~~~~~~~~~~~~~~~~
 OUTGOING:
 ~~~~~~~~~~~~~~~~~~~~~
-	Total_Num_Outflow_L3M
-	Total_Amt_Outflow_L3M
-	Num_EDO_Out_G1_L3M
-	Num_POS_Out_G1_L3M
-	Num_Loan_Out_G1_L3M
-	Num_SO_Out_G1_L3M
-	Num_Prepaid_Out_G1_L3M
-	Num_RTC_Out_G1_L3M
-	Num_CNP_Out_G1_L3M
-	Num_Pmt_Out_G1_L3M
-	Amt_Outflow_G1_L3M
-	Amt_CW_ATM_Out_G1_L3M
-	Amt_EDO_Out_G1_L3M
-	Amt_POS_Out_G1_L3M
-	Amt_Loan_Out_G1_L3M
-	Amt_SO_Out_G1_L3M
-	Amt_Prepaid_Out_G1_L3M
-	Amt_RTC_Out_G1_L3M
-	Amt_CNP_Out_G1_L3M
-	Amt_Pmt_Out_G1_L3M
-	Num_Outflow_CC_L3M
-	Amt_Outflow_CC_L3M
-	Num_POS_Out_CC_L3M
-	Amt_POS_Out_CC_L3M
-	Num_USSD
-	Amt_USSD
-	Num_App
-	Amt_App
-	Num_Elec
-	Amt_Elec
-	Num_Airtime
-	Amt_Airtime
+	Total_Num_Outflow_L3M	(all accounts - total count of outflows)
+	Total_Amt_Outflow_L3M	(all accounts - total value of outflows)
+	Amt_Outflow_G1_L3M		()
+	Num_CW_ATM_Out_G1_L3M	(primary saving - count of withdrawal outflows)
+	Amt_CW_ATM_Out_G1_L3M	(primary saving - value of withdrawal outflows)
+	Num_EDO_Out_G1_L3M		(primary saving - count of electronic debit order withdrawal outflows)
+	Amt_EDO_Out_G1_L3M		(primary saving - value of electronic debit order withdrawal outflows)
+	Num_POS_Out_G1_L3M		(primary saving - )
+	Amt_POS_Out_G1_L3M		()
+	Num_Loan_Out_G1_L3M		()
+	Amt_Loan_Out_G1_L3M		()
+	Num_SO_Out_G1_L3M		()
+	Amt_SO_Out_G1_L3M		()
+	Num_Prepaid_Out_G1_L3M	()
+	Amt_Prepaid_Out_G1_L3M	()
+	Num_RTC_Out_G1_L3M		()
+	Amt_RTC_Out_G1_L3M		()
+	Num_CNP_Out_G1_L3M		()
+	Amt_CNP_Out_G1_L3M		()
+	Num_Pmt_Out_G1_L3M		()
+	Amt_Pmt_Out_G1_L3M		()
+	Num_Outflow_CC_L3M		()
+	Amt_Outflow_CC_L3M		()
+	Num_POS_Out_CC_L3M		()
+	Amt_POS_Out_CC_L3M		()
+	Num_USSD				()
+	Amt_USSD				()
+	Num_App					()
+	Amt_App					()
+	Num_Elec				()
+	Amt_Elec				()
+	Num_Airtime				()
+	Amt_Airtime				()
 
 ~~~~~~~~~~~~~~~~~~~~~
 PROFILES:
