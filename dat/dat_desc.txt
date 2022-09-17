@@ -86,7 +86,7 @@ ALL:
 ~~~~~~~~~~~~~~~~~~~~~
 OTHER:
 ~~~~~~~~~~~~~~~~~~~~~
-	ClientIdentifier
+	ClientIdentifier (some repeat for different BehavourType)
 	BehaviourType (18) {AppNoTake-up, AppTake-up, BankingNoTake-up, BankingNoTake-up, CardUserNoTake-up, CardUserTake-up, CreditCardNoTake-up, CreditCardTake-up, DebitOrderNoTake-up, DebitOrderTake-up, FinancialEducationNoTake-up, FinancialEducationTake-up, LoanNoTake-up, LoanTake-up, SavingsNoTake-up, SavingsTake-up, VirtualCardNoTake-up, VirtualCardTake-up}
 	MinBalanceL3M
 	MinBalanceAVG
@@ -183,7 +183,7 @@ MASKED:
 	CS1 (28) {0, 1, 2, 3, ..., 22, 26, 28, 29, 31, NULL}
 	CS2 (28) {0, 1, 2, 3, ..., 23, 26, 30, 35, 36, NULL}
 	CS3 (41) {0, 1, 2, 3, ..., 33, 36, 41, ..., 45, NULL}
-	CS4 () {}
+	CS4 [0.00, 9.7979]
 
 ~~~~~~~~~~~~~~~~~~~~~
 DIMLY RELATED:
