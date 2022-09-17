@@ -96,16 +96,16 @@ OTHER:
 												 Loan, 
 												 Savings, 
 												 VirtualCard}
-	MinBalanceL3M
-	MinBalanceAVG
-	MaxBalanceL3M
-	MaxBalanceAVG
-	Enquiry_Only_Flag
-	Num_Accounts_All
-	Instalment_Amt_All
-	Current_Balance_All
-	Num_Accounts_CC
-	Num_Accounts_Veh
+	MinBalanceL3M		(account - min balance over l3m)
+	MinBalanceAVG		(account - avg min balance over l3m)
+	MaxBalanceL3M		(account - max balance over l3m)
+	MaxBalanceAVG		(account - avg max balance over l3m)
+	Enquiry_Only_Flag	(Enquiries done through bureau)
+	Num_Accounts_All	(bureau accounts - total count)
+	Instalment_Amt_All	(bureau accounts - total installment value)
+	Current_Balance_All	(bureau accounts - current balance)
+	Num_Accounts_CC		(credit cards - count of internal & external credit cards)
+	Num_Accounts_Veh	(count of vehicle loans)
 
 ~~~~~~~~~~~~~~~~~~~~~
 INCOMING:
@@ -122,61 +122,71 @@ OUTGOING:
 ~~~~~~~~~~~~~~~~~~~~~
 	Total_Num_Outflow_L3M	(all accounts - total count of outflows)
 	Total_Amt_Outflow_L3M	(all accounts - total value of outflows)
-	Amt_Outflow_G1_L3M		()
+	Amt_Outflow_G1_L3M		(primary saving - value of outflows)
 	Num_CW_ATM_Out_G1_L3M	(primary saving - count of withdrawal outflows)
 	Amt_CW_ATM_Out_G1_L3M	(primary saving - value of withdrawal outflows)
 	Num_EDO_Out_G1_L3M		(primary saving - count of electronic debit order withdrawal outflows)
 	Amt_EDO_Out_G1_L3M		(primary saving - value of electronic debit order withdrawal outflows)
-	Num_POS_Out_G1_L3M		(primary saving - )
-	Amt_POS_Out_G1_L3M		()
-	Num_Loan_Out_G1_L3M		()
-	Amt_Loan_Out_G1_L3M		()
-	Num_SO_Out_G1_L3M		()
-	Amt_SO_Out_G1_L3M		()
-	Num_Prepaid_Out_G1_L3M	()
-	Amt_Prepaid_Out_G1_L3M	()
-	Num_RTC_Out_G1_L3M		()
-	Amt_RTC_Out_G1_L3M		()
-	Num_CNP_Out_G1_L3M		()
-	Amt_CNP_Out_G1_L3M		()
-	Num_Pmt_Out_G1_L3M		()
-	Amt_Pmt_Out_G1_L3M		()
-	Num_Outflow_CC_L3M		()
-	Amt_Outflow_CC_L3M		()
-	Num_POS_Out_CC_L3M		()
-	Amt_POS_Out_CC_L3M		()
-	Num_USSD				()
-	Amt_USSD				()
-	Num_App					()
-	Amt_App					()
-	Num_Elec				()
-	Amt_Elec				()
-	Num_Airtime				()
-	Amt_Airtime				()
+	Num_POS_Out_G1_L3M		(primary saving - count of point of sale outflows)
+	Amt_POS_Out_G1_L3M		(primary saving - value of point of sale outflows)
+	Num_Loan_Out_G1_L3M		(primary saving - count of capitec loan payments)
+	Amt_Loan_Out_G1_L3M		(primary saving - value of capitec loan payments)
+	Num_SO_Out_G1_L3M		(primary saving - count of stop order* outflows)
+	Amt_SO_Out_G1_L3M		(primary saving - value of stop order outflows)
+	Num_Prepaid_Out_G1_L3M	(primary saving - count of prepaid** outflows)
+	Amt_Prepaid_Out_G1_L3M	(primary saving - value of prepaid outflows)
+	Num_RTC_Out_G1_L3M		(primary saving - count of real-time clearance outflows)
+	Amt_RTC_Out_G1_L3M		(primary saving - value of real-time clearance outflows)
+	Num_CNP_Out_G1_L3M		(primary saving - count of card not present outflows)
+	Amt_CNP_Out_G1_L3M		(primary saving - value of card not present outflows)
+	Num_Pmt_Out_G1_L3M		(primary saving - count of payment outflows)
+	Amt_Pmt_Out_G1_L3M		(primary saving - value of payment outflows)
+	Num_Outflow_CC_L3M		(credit card - count of outflows)
+	Amt_Outflow_CC_L3M		(credit card - value of outflows)
+	Num_POS_Out_CC_L3M		(credit card - count of point of sale outflows)
+	Amt_POS_Out_CC_L3M		(credit card - value of point of sale outflows)
+	Num_USSD				(USSD - count of transactions trough USSD)
+	Amt_USSD				(USSD - value of transactions trough USSD)
+	Num_App					(App - count of transactions through App)
+	Amt_App					(App - value of transactions through App)
+	Num_Elec				( - count of electricity purchases)
+	Amt_Elec				( - value of electricity purchases)
+	Num_Airtime				( - count of airtime purchases)
+	Amt_Airtime				( - value of airtime purchases)
+	*stop order = instruction to bank to make a series of future dated recurring payments
+	**prepaid = e.g. phone bill, electricity
 
 ~~~~~~~~~~~~~~~~~~~~~
 PROFILES:
 ~~~~~~~~~~~~~~~~~~~~~
-	ALL_Val_Cur_Mth_Instalm_30_Days
-	ALL_Perc_Utilisation
-	ALL_Num_Ever_Trades
-	ALL_Num_Open_Satisf_Trades
-	ALL_Num_Trades_180_Days
-	ALL_Val_OD_Bal_1_Year
-	ALL_Perc_Satisf_To_Open_Trades
-	ALL_Avg_Months_On_Book
-	ALL_Perc_Payments_2Years
-	ALL_Time_MR_Trade
-	ALL_Num_Open_Trades
+	ALL_Avg_Months_On_Book			(only open accounts - avg count of months accounts have been open)
+	ALL_Max_Delq_Ever^				(all payment profiles - max delinquency* level)
+	ALL_Num_Ever_Trades				(all payment profiles - count of all open and closed tradelines)
+	ALL_Num_Open_Satisf_Trades		(all payment profiles - count of open satisfactory tradelines)
+	ALL_Num_Open_Trades				(all payment profiles - count of open tradelines)
+	ALL_Num_Trades_180_Days			(all payment profiles - count of tradelines opened in 180 days)
+	ALL_Perc_Payments_2Years		(all payment profiles - percentage of updates recieved within update period in last 2 years)
+	ALL_Perc_Satisf_To_Open_Trades	(all payment profiles - percentage of open satisfactory tradelines to open tradelines)
+	ALL_Perc_Utilisation			(all payment profiles - percentage of current balance to original balance)
+	ALL_Time_MR_Trade				(all payment profiles - time since opening of most recent tradeline)
+	ALL_Val_Cur_Mth_Instalm_30_Days	(all payment profiles - value of monthly installments on open tradelines ~30 days ago)
+	ALL_Val_OD_Bal_1_Year			(all payment profiles - value of overdue balance on open tradelines ~1 year ago)
+	*delinquency = behind on payment
+	^ALL_Max_Delq_Ever = related to FINANCIAL HEALTH
 
 ~~~~~~~~~~~~~~~~~~~~~
 FINANCIAL HEALTH:
 ~~~~~~~~~~~~~~~~~~~~~
-	Has_Deed
-	Debt_Review_Score
-	ALL_Max_Delq_Ever
-	Score_MI
-	InsufFunds
+	Has_Deed			(does client have deed on property)
+	Debt_Review_Score	(likelyhood of ongoing debt review [related to fin edu])*
+	Score_MI			(generic bureau score - probability of default for credit providers)
+	InsufFunds			(count of times client had insufficient funds for a transaction)
+	Thin_File_Flag		(flag to identify clients without credit score)
+	*Bands 1: <= 705 (very high risk)
+		   2: 706 - 726 (high risk)
+		   3: 727 - 750 (average risk)
+		   4: 751 - 784 (low risk)
+		   5: > 784 (minimum risk)
 
 ~~~~~~~~~~~~~~~~~~~~~
 MASKED:
@@ -196,12 +206,7 @@ MASKED:
 ~~~~~~~~~~~~~~~~~~~~~
 DIMLY RELATED:
 ~~~~~~~~~~~~~~~~~~~~~
-	C_Telephones
-
-~~~~~~~~~~~~~~~~~~~~~
-OMITTABLE BECAUSE OF:
-~~~~~~~~~~~~~~~~~~~~~
-	Thin_File_Flag
+	C_Telephones	(count of contact numbers on consumber's profile)
 
 ~~~~~~~~~~~~~~~~~~~~~
 REMOVABLE:
